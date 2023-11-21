@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --bg-body: #121214;
+    --bg-text-time: #F8F8FC;
+    --bg-buttons: #242424;
+}
+
+body{
+    background: var(--bg-body);
+}
+
+
+
+#timer{
+    display: grid;
+    place-content: center;
+    gap: 1.6rem;
+    height: 80vh;
+}
+
+.timerDisplay{
+    display: flex;
+    justify-content: center;
+}
+
+.timerDisplay span{
+    color: var(--bg-text-time);
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 96px;    
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    padding: 2.2rem 4rem;
+    border-radius: 9999px;
+    background: var(--bg-buttons)
+}
+
+.modeSun{
+    position: absolute;
+    right: 3.2rem;
+    top: 3.2rem;
+    transition: all 0.3s;
+}
+
+.modeSun:hover {
+    transform: rotate(6.142rad);
+}
+
+.modeMoon{
+    position: absolute;
+    right: 3.2rem;
+    top: 3.2rem;
+    transition: all 0.3s;
+}
+
+.modeMoon:hover {
+    transform: rotate(3.142rad);
+}
